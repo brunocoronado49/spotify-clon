@@ -1,4 +1,4 @@
-const SideBarOption = ({ title, icon }) => {
+const SideBarOption = ({ title, Icon }) => {
     return (
         <div className="sidebar-option">
             {Icon && <Icon className="sidebarOption__icon" />}

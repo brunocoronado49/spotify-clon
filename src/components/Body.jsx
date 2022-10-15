@@ -14,7 +14,7 @@ const Body = ({ spotify }) => {
                 <div className="body-infoText">
                     <strong>Playlist</strong>
                     <h2>Discover Weekly</h2>
-                    <p>{discover_weekly?.description}</p>
+                    <p>{discoverWeekly?.description}</p>
                 </div>
             </div>
             <div className="body-songs">
@@ -23,8 +23,8 @@ const Body = ({ spotify }) => {
                     <Favorite fontSize="large" />
                     <MoreHoriz />
                 </div>
-                {discover_weekly?.tracks.items.map((item) => (
-                    <SongRow track={item.track} />
+                {discoverWeekly?.tracks.items.map((item, index) => (
+                    <SongRow track={item.track} key={index} />
                 ))}
             </div>
         </div>

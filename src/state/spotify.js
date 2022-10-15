@@ -1,6 +1,6 @@
 export const authEndpoint = 'https://accounts.spotify.com/authorize';
-const redirectURL = 'http://localhost:5173/';
-const clientId = '';
+const redirectUri = 'http://localhost:5173/';
+const clientId = '9ce3dc785ecf45d79202d1c1fb97e671';
 
 const scopes = [
     'user-read-currently-playing',
@@ -14,7 +14,7 @@ export const getTokenFromURL = () => {
     return window.location.hash
         .substring(1)
         .split('&')
-        .reduce((initial, items) => {
+        .reduce((initial, item) => {
             let parts = item.split('=');
             initial[parts[0]] = decodeURIComponent(parts[1]);
 
