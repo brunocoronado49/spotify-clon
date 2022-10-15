@@ -10,6 +10,7 @@ import {
     PlayCircleFilled,
     RemoveCircleOutline,
 } from "@mui/icons-material";
+import "../styles/Footer.css";
 
 const Footer = () => {
     return (
@@ -30,11 +31,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-center">
-                <ShuffleIcon className="footer__green" />
-                <SkipPreviousIcon className="footer__icon" />
-                <PlayCircleFilled fontSize="large" className="footer__icon" />
-                <SkipNextIcon className="footer__icon	" />
-                <RepeatIcon className="footer__green" />
+                <ShuffleIcon className="footer-green" />
+                <SkipPreviousIcon className="footer-icon" />
+                <PlayCircleFilled fontSize="large" className="footer-icon" />
+                <SkipNextIcon className="footer-icon	" />
+                <RepeatIcon className="footer-green" />
             </div>
             <div className="footer-right">
                 <Grid container spacing={2}>

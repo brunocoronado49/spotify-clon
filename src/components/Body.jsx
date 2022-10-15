@@ -2,6 +2,7 @@ import { Favorite, MoreHoriz, PlayCircleFilled } from "@mui/icons-material";
 import { useDataLayerContext } from "../context/DataLayer";
 import Header from "./Header";
 import SongRow from "./SongRow";
+import "../styles/Body.css";
 
 const Body = ({ spotify }) => {
     const [{ discoverWeekly }, dispatch] = useDataLayerContext();
@@ -19,7 +20,7 @@ const Body = ({ spotify }) => {
             </div>
             <div className="body-songs">
                 <div className="body-icons">
-                    <PlayCircleFilled className="body__shuffle" />
+                    <PlayCircleFilled className="body-shuffle" />
                     <Favorite fontSize="large" />
                     <MoreHoriz />
                 </div>

@@ -1,4 +1,5 @@
 import { loginUrl } from "../state/spotify";
+import "../styles/Login.css";
 
 const Login = () => {
     return (

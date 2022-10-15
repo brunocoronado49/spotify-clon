@@ -1,7 +1,9 @@
+import "../styles/SideBarOption.css";
+
 const SideBarOption = ({ title, Icon }) => {
     return (
-        <div className="sidebar-option">
-            {Icon && <Icon className="sidebarOption__icon" />}
+        <div className="sidebarOption">
+            {Icon && <Icon className="sidebarOption-icon" />}
             {Icon ? <h4>{title}</h4> : <p>{title}</p>}
         </div>
     );

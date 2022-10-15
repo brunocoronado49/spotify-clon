@@ -1,6 +1,7 @@
 import SideBar from "./SideBar";
 import Body from "./Body";
 import Footer from "./Footer";
+import "../styles/Player.css";
 
 const Player = ({ spotify }) => {
     return (

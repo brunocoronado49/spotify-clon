@@ -1,3 +1,5 @@
+import "../styles/SongRow.css";
+
 const SongRow = ({ track }) => {
     return (
         <div className="songRow">

@@ -1,6 +1,7 @@
 import SearchIcon from "@mui/icons-material/Search";
 import { Avatar } from "@mui/material";
 import { useDataLayerContext } from "../context/DataLayer";
+import "../styles/Header.css";
 
 const Header = () => {
     const [{ user }, dispatch] = useDataLayerContext();
